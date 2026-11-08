@@ -1,0 +1,66 @@
+- !<AssetImportMetadata/fdc0513e-288e-4a65-bce0-7bed8869dd52>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 7a9e90e0-fe9e-46fa-8012-fa8865e76b2a
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 7a9e90e0-fe9e-46fa-8012-fa8865e76b2a
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 108bf4d3-e87d-4fc5-ac62-0983e08fea7f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/108bf4d3-e87d-4fc5-ac62-0983e08fea7f>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: a32e622f-b2bc-4f50-96ac-6aebaea815f2
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    cameraObject: false
+    captureTimeScale: false
+    creature: false
+    debugText: false
+    demoMode: false
+    spotsRoot: false
+    testMode: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - demoMode: true
+      testMode: false
+      captureTimeScale: !<float> 1.000000
+      cameraObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      creature: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      spotsRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      debugText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"Far Look controller"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @input bool demoMode = true {"hint":"Demo timings (60 s work, 30 s snooze). Real timings when off."}'
+    - '// @input bool testMode {"hint":"Test hooks for LEAF (resetForTest, forceLookAtCreature). Off in the demo build."}'
+    - '// @input float captureTimeScale = 1 {"hint":"Video capture only: slows every Far Look animation and timer (1 = real time). Keep at 1 in the demo build."}'
+    - "// @input SceneObject cameraObject {\"hint\":\"Camera Object (the user's head)\"}"
+    - '// @input SceneObject creature {"hint":"Creature root object"}'
+    - '// @input SceneObject spotsRoot {"hint":"Parent of Spot_0 … Spot_3"}'
+    - '// @input Component.Text debugText {"hint":"Text mirror of the state snapshot (read by LEAF)"}'

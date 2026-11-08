@@ -1,0 +1,54 @@
+- !<AssetImportMetadata/f80394b3-a646-442a-b811-dc8f6c87d45c>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 6490a7b7-09d4-4256-aeca-33d2d3c1b2f4
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 6490a7b7-09d4-4256-aeca-33d2d3c1b2f4
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> e3ff68dc-730e-4d30-8c99-92a87211cddc
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/e3ff68dc-730e-4d30-8c99-92a87211cddc>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: c1045f31-68c1-42e7-aeb8-5e9ff76132ab
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    controller: false
+    fadeMs: false
+    viewDistanceCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - controller: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      viewDistanceCm: !<float> 75.000000
+      fadeMs: !<float> 800.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"Start hint, fades after the first break"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @input AssignableType_1 controller {"hint":"FarLookController (read-only: state)"}'
+    - "// @input float viewDistanceCm = 75 {\"hint\":\"Distance from the user's eyes in cm; scales the text size (role size x distance / 110)\"}"
+    - '// @input float fadeMs = 800 {"hint":"Fade-out duration in ms"}'

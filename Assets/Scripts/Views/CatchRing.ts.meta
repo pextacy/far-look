@@ -1,0 +1,60 @@
+- !<AssetImportMetadata/79ab9c8d-17d7-4118-988c-6149b38d4fe2>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 60c78eb4-db0f-42a6-8253-c1ae1afe0f85
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 60c78eb4-db0f-42a6-8253-c1ae1afe0f85
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> e3e34751-1466-456d-8034-d8d189f0caaa
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/e3e34751-1466-456d-8034-d8d189f0caaa>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 53dbae03-8b4a-4db2-8549-67c36928230d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    controller: false
+    diameterCm: false
+    material: false
+    segments: false
+    thicknessCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - controller: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      material: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      diameterCm: !<float> 30.000000
+      thicknessCm: 1.600000
+      segments: !<float> 64.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"Catch ring (look progress)"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @input AssignableType_1 controller {"hint":"FarLookController that owns the break state machine"}'
+    - '// @input Asset.Material material {"hint":"Unlit material; cloned per ring and tinted via mainPass.baseColor"}'
+    - '// @input float diameterCm = 30 {"hint":"Outer diameter of the ring in cm"}'
+    - '// @input float thicknessCm = 1.6 {"hint":"Radial thickness of the ring band in cm"}'
+    - '// @input float segments = 64 {"hint":"Segments for a full circle (fill arc uses a proportional count)"}'

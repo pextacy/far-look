@@ -1,0 +1,63 @@
+- !<AssetImportMetadata/f13a928b-0a45-4328-9104-8d742b3d4f4b>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 11c240bc-ef59-49c4-99d8-212c82525c1c
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 11c240bc-ef59-49c4-99d8-212c82525c1c
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 91a46ef6-9199-41b8-b154-828e520207ca
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/91a46ef6-9199-41b8-b154-828e520207ca>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 4362e50d-88ef-46b7-be53-ffd615e5b16f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    controller: false
+    distanceCm: false
+    edgeRadiusCm: false
+    material: false
+    mesh: false
+    sizeCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - controller: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      mesh: !<reference.RenderMesh> 00000000-0000-0000-0000-000000000000
+      material: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      distanceCm: !<float> 60.000000
+      edgeRadiusCm: !<float> 13.000000
+      sizeCm: !<float> 3.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"Edge arrow (points at the hidden creature)"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @input AssignableType_1 controller {"hint":"FarLookController that owns the break state and camera"}'
+    - '// @input Asset.RenderMesh mesh {"hint":"Cone mesh; its tip must point along +Y in mesh space"}'
+    - '// @input Asset.Material material {"hint":"Unlit material; cloned and tinted yellow"}'
+    - '// @input float distanceCm = 60 {"hint":"Distance in front of the eyes in cm"}'
+    - '// @input float edgeRadiusCm = 13 {"hint":"Offset from the view centre toward the edge in cm (at distanceCm)"}'
+    - '// @input float sizeCm = 3 {"hint":"Arrow length (tip to base) in cm"}'

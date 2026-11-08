@@ -1,0 +1,60 @@
+- !<AssetImportMetadata/5630d183-fb40-4c0f-9643-b6f888cea158>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 3f09c33f-7f45-466c-846f-e189977600a2
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 3f09c33f-7f45-466c-846f-e189977600a2
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 57a55272-3c58-4dc1-b100-a85a1c5185b6
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/57a55272-3c58-4dc1-b100-a85a1c5185b6>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 4fa1a83f-555f-49ee-8411-9f66caac5308
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    billboard: false
+    controller: false
+    panelHeight: false
+    panelWidth: false
+    viewDistanceCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - controller: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      viewDistanceCm: !<float> 60.000000
+      panelWidth: !<float> 26.000000
+      panelHeight: !<float> 11.000000
+      billboard: true
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"Score card: shown on caught"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @input AssignableType_1 controller {"hint":"FarLookController (read-only: state, streak, findMs)"}'
+    - "// @input float viewDistanceCm = 60 {\"hint\":\"Distance from the user's eyes in cm; scales text sizes (role size x distance / 110)\"}"
+    - '// @input float panelWidth = 26 {"hint":"Card width in cm"}'
+    - '// @input float panelHeight = 11 {"hint":"Card height in cm"}'
+    - '// @input bool billboard = true {"hint":"Turn the card toward the camera every frame (yaw only)"}'

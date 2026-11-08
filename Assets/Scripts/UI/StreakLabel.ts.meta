@@ -1,0 +1,51 @@
+- !<AssetImportMetadata/06c553f5-7f7f-4b59-a699-f8536fc57789>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> fcc455b6-e556-4020-9e1e-be2596f5f3ed
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> fcc455b6-e556-4020-9e1e-be2596f5f3ed
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 270d4807-0011-40fc-8228-15268538d775
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/270d4807-0011-40fc-8228-15268538d775>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: b7348001-6ae2-4233-9547-d0122da7ef67
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    controller: false
+    viewDistanceCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - controller: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      viewDistanceCm: !<float> 60.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"Streak label on the desk"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @input AssignableType_1 controller {"hint":"FarLookController (read-only: streak)"}'
+    - "// @input float viewDistanceCm = 60 {\"hint\":\"Distance from the user's eyes in cm; scales the text size (role size x distance / 110)\"}"

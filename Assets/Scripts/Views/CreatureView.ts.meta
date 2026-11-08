@@ -1,0 +1,63 @@
+- !<AssetImportMetadata/5391ee78-07ae-4d75-a14c-32079bd5e540>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> df912e1d-198a-46f1-ad6c-f03caff7f281
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> df912e1d-198a-46f1-ad6c-f03caff7f281
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 1f0313f6-7526-4d77-9705-071d4680cef0
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/1f0313f6-7526-4d77-9705-071d4680cef0>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 7c486afa-a43b-4fc0-b957-01e75b07d44b
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    bobCm: false
+    bobHz: false
+    body: false
+    controller: false
+    facingOffsetDeg: false
+    hopPeakCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - controller: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      body: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      hopPeakCm: !<float> 60.000000
+      bobCm: !<float> 2.000000
+      bobHz: !<float> 1.000000
+      facingOffsetDeg: !<float> 0.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"Creature view: intro hop, bob, pop, wiggle"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @input AssignableType_1 controller {"hint":"FarLookController that owns the break state machine"}'
+    - '// @input SceneObject body {"hint":"Creature_Body child holding the meshes (receives scale and rotation)"}'
+    - '// @input float hopPeakCm = 60 {"hint":"Height of the hop arc above the straight desk-to-spot line, in cm"}'
+    - '// @input float bobCm = 2 {"hint":"Idle bob amplitude while hiding, in cm"}'
+    - '// @input float bobHz = 1 {"hint":"Idle bob frequency while hiding, in Hz"}'
+    - '// @input float facingOffsetDeg {"hint":"Extra yaw in degrees if the mesh front is not +Z (0 = mesh faces +Z)"}'

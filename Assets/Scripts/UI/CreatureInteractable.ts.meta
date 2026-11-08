@@ -1,0 +1,54 @@
+- !<AssetImportMetadata/db3b4d2a-5b92-4b55-bddf-6e62e3d9f9b0>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> b97cfddf-9547-4411-81c7-13f22a4d4852
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> b97cfddf-9547-4411-81c7-13f22a4d4852
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> e00c9149-fd58-4e09-a987-e7c9e9b2fd47
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/e00c9149-fd58-4e09-a987-e7c9e9b2fd47>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 0a8a1950-f5a4-452d-ba6b-05eb6adeefa9
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    colliderHeightCm: false
+    colliderRadiusCm: false
+    debugDrawCollider: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - colliderRadiusCm: !<float> 20.000000
+      colliderHeightCm: !<float> 7.000000
+      debugDrawCollider: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"Creature interactable: far-pinch catch target"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @input float colliderRadiusCm = 20 {"hint":"Sphere collider radius in cm (20 = 40 cm target, generous for a far pinch at 5 m)"}'
+    - '// @input float colliderHeightCm = 7 {"hint":"Height of the collider centre above the creature root, in cm"}'
+    - '// @input bool debugDrawCollider {"hint":"Draw the collider in the preview (debug only)"}'
